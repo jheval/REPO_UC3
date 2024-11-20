@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:background="@drawable/plane"
+    tools:background="@drawable/avionback"
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="300dp">
 
@@ -19,43 +19,185 @@
 
         <ImageView
             android:id="@+id/idNotificacion"
-            android:layout_width="138dp"
-            android:layout_height="148dp"
+            android:layout_width="127dp"
+            android:layout_height="123dp"
             app:srcCompat="@drawable/notificacion"
-            tools:layout_editor_absoluteX="836dp"
-            tools:layout_editor_absoluteY="1012dp" />
+            tools:layout_editor_absoluteX="788dp"
+            tools:layout_editor_absoluteY="1083dp" />
 
         <ImageView
-            android:id="@+id/idComprar"
-            android:layout_width="152dp"
-            android:layout_height="155dp"
+            android:id="@+id/ideComprar"
+            android:layout_width="162dp"
+            android:layout_height="118dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/ideViajes"
             app:srcCompat="@drawable/globo"
-            tools:layout_editor_absoluteX="390dp"
-            tools:layout_editor_absoluteY="984dp" />
+            tools:layout_editor_absoluteY="1088dp" />
 
         <ImageView
-            android:id="@+id/idViajes"
-            android:layout_width="176dp"
-            android:layout_height="142dp"
+            android:id="@+id/ideViajes"
+            android:layout_width="141dp"
+            android:layout_height="106dp"
             app:srcCompat="@drawable/viajes"
-            tools:layout_editor_absoluteX="615dp"
-            tools:layout_editor_absoluteY="1018dp" />
+            tools:layout_editor_absoluteX="535dp"
+            tools:layout_editor_absoluteY="1109dp" />
 
         <ImageView
             android:id="@+id/idLatampass"
-            android:layout_width="179dp"
-            android:layout_height="178dp"
+            android:layout_width="128dp"
+            android:layout_height="106dp"
             app:srcCompat="@drawable/latampass"
-            tools:layout_editor_absoluteX="1030dp"
-            tools:layout_editor_absoluteY="984dp" />
+            tools:layout_editor_absoluteX="984dp"
+            tools:layout_editor_absoluteY="1100dp" />
 
         <ImageView
-            android:id="@+id/idInicio"
-            android:layout_width="176dp"
-            android:layout_height="173dp"
+            android:id="@+id/ideInicio"
+            android:layout_width="140dp"
+            android:layout_height="124dp"
             app:srcCompat="@drawable/hogar"
-            tools:layout_editor_absoluteX="185dp"
-            tools:layout_editor_absoluteY="999dp" />
+            tools:layout_editor_absoluteX="308dp"
+            tools:layout_editor_absoluteY="1082dp" />
+
+        <Button
+            android:id="@+id/btPaquetes"
+            android:layout_width="240dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="24dp"
+            android:drawableLeft="@drawable/paquetes2"
+            android:text="@string/sv_paquetes"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toStartOf="@+id/btHotel"
+            app:layout_constraintTop_toTopOf="@+id/btHotel" />
+
+        <Button
+            android:id="@+id/btHotel"
+            android:layout_width="236dp"
+            android:layout_height="115dp"
+            android:drawableLeft="@drawable/hotel2"
+            android:text="@string/sv_hotel"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="103dp" />
+
+        <Button
+            android:id="@+id/btCarros"
+            android:layout_width="240dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="24dp"
+            android:drawableLeft="@drawable/carros"
+            android:text="@string/sv_carros"
+            android:textSize="32sp"
+            app:layout_constraintStart_toEndOf="@+id/btHotel"
+            app:layout_constraintTop_toTopOf="@+id/btHotel" />
+
+        <Button
+            android:id="@+id/btVuelos"
+            android:layout_width="240dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="24dp"
+            android:drawableLeft="@drawable/vuelos"
+            android:text="Button"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toStartOf="@+id/btPaquetes"
+            app:layout_constraintTop_toTopOf="@+id/btPaquetes" />
+
+        <Button
+            android:id="@+id/btSeguros"
+            android:layout_width="240dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="24dp"
+            android:drawableLeft="@drawable/seguros2"
+            android:text="@string/sv_seguros"
+            android:textSize="32sp"
+            app:layout_constraintStart_toEndOf="@+id/btCarros"
+            app:layout_constraintTop_toTopOf="@+id/btCarros" />
+
+        <EditText
+            android:id="@+id/idOrigen"
+            android:layout_width="1000dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:drawableLeft="@drawable/vuelos"
+            android:ems="10"
+            android:hint="   origen"
+            android:inputType="text"
+            android:text="@string/sv_origen"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="@+id/btHotel"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="@+id/btHotel"
+            app:layout_constraintTop_toBottomOf="@+id/idBotonida" />
+
+        <EditText
+            android:id="@+id/idDestinofinal"
+            android:layout_width="1000sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="12dp"
+            android:autofillHints="   destino"
+            android:drawableLeft="@drawable/destino"
+            android:ems="10"
+            android:hint="   destino"
+            android:inputType="text"
+            android:text="@string/sv_destino"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="@+id/idOrigen"
+            app:layout_constraintStart_toStartOf="@+id/idOrigen"
+            app:layout_constraintTop_toBottomOf="@+id/idOrigen" />
+
+        <EditText
+            android:id="@+id/idFechaida"
+            android:layout_width="500sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="36dp"
+            android:autofillHints="   fecha de ida"
+            android:drawableLeft="@drawable/destino"
+            android:ems="10"
+            android:hint="   fecha de ida"
+            android:inputType="text"
+            android:text="@string/sv_destino"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="@+id/idDestinofinal"
+            app:layout_constraintTop_toBottomOf="@+id/idDestinofinal" />
+
+        <EditText
+            android:id="@+id/idFechavuelta"
+            android:layout_width="500sp"
+            android:layout_height="100sp"
+            android:autofillHints="   fecha de ida"
+            android:drawableLeft="@drawable/destino"
+            android:ems="10"
+            android:hint="   fecha de vuelta"
+            android:inputType="text"
+            android:text="@string/sv_destino"
+            android:textSize="32sp"
+            app:layout_constraintStart_toEndOf="@+id/idFechaida"
+            app:layout_constraintTop_toTopOf="@+id/idFechaida" />
+
+        <Button
+            android:id="@+id/idBotonida"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="48dp"
+            android:background="@color/white"
+            android:text="@string/sv_botonida"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btHotel" />
+
+        <Button
+            android:id="@+id/idBotonsoloida"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="200dp"
+            android:background="@color/white"
+            android:text="@string/sv_soloida"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btHotel" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

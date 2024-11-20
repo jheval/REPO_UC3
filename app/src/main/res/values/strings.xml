@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">DAM_UC3_VALDIVIESO</string>
     <string name="sv_comprar">COMPRAR</string>
+    <string name="sv_vuelos">vuelos</string>
+    <string name="asd">paquetes</string>
+    <string name="sv_paquetes">paquetes</string>
+    <string name="sv_hotel">hotel</string>
+    <string name="sv_carros">carros</string>
+    <string name="sv_seguros">seguros</string>
+    <string name="sv_origen" />
+    <string name="sv_destino" />
+    <string name="sv_botonida">ida y vuelta</string>
+    <string name="sv_soloida">solo ida</string>
 </resources>
